@@ -22,8 +22,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.android.marsrealestate.network.MarsApi
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Response
-import javax.security.auth.callback.Callback
+
 
 /**
  * The [ViewModel] that is attached to the [OverviewFragment].
@@ -58,6 +59,5 @@ class OverviewViewModel : ViewModel() {
                 _response.value = response.body()
             }
         })
-
     }
 }
